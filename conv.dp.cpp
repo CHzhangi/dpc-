@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 
-// 定义 CUDA 核函数
 void convolutionKernel(const int* input, const int* kernel, int* output, int inputWidth, int inputHeight, int kernelWidth, int kernelHeight, int outputWidth, int outputHeight,
                        const sycl::nd_item<3> &item_ct1)
 {
